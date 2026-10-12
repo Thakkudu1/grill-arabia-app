@@ -131,7 +131,6 @@ const RESTAURANT_WHATSAPP = "917736094215"; // Grill Arabia WhatsApp number
 
 const cart = {};
 let activeCategory = "All";
-let activeCategory = "All";
 const money = n => "₹" + Number(n).toLocaleString("en-IN");
 const grid = document.getElementById("menu-grid");
 const categoriesEl = document.getElementById("categories");
