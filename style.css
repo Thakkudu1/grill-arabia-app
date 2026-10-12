@@ -15,3 +15,15 @@
   object-fit: contain;
   border-radius: 12px;
 }
+:root {
+  --bg: #080808;
+  --ink: #f5f5f5;
+  --muted: #bdbdbd;
+  --card: #171717;
+  --line: #333333;
+}
+
+body {
+  background: #080808;
+  color: #f5f5f5;
+}
