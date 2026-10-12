@@ -6,7 +6,6 @@
 */
 const RESTAURANT_WHATSAPP = "917736094215"; // Grill Arabia WhatsApp number
 
-const MENU = [
   const MENU = [
   {
     id: 1,
