@@ -7,15 +7,128 @@
 const RESTAURANT_WHATSAPP = "917736094215"; // Grill Arabia WhatsApp number
 
 const MENU = [
-  {id:1,name:"Chicken Alfaham",category:"Grill",price:220,emoji:"🍗",desc:"Smoky, juicy grilled chicken with bold Arabian flavour.",badge:"BESTSELLER"},
-  {id:2,name:"Chicken Mandi",category:"Mandi",price:260,emoji:"🍛",desc:"Fragrant mandi rice served with tender chicken.",badge:"POPULAR"},
-  {id:3,name:"Alfaham Mandi",category:"Mandi",price:290,emoji:"🍗",desc:"Aromatic rice topped with flame-grilled alfaham.",badge:""},
-  {id:4,name:"Shawarma Roll",category:"Rolls",price:120,emoji:"🌯",desc:"Creamy, savoury chicken wrapped up fresh.",badge:"QUICK BITE"},
-  {id:5,name:"Grilled Chicken",category:"Grill",price:420,emoji:"🔥",desc:"A flavour-packed grilled chicken to share.",badge:""},
-  {id:6,name:"Fresh Lime",category:"Drinks",price:50,emoji:"🍋",desc:"A refreshing citrus cooler.",badge:""},
-  {id:7,name:"Chicken Fried Rice",category:"Rice",price:180,emoji:"🍚",desc:"Wok-tossed rice with chicken and vegetables.",badge:""},
-  {id:8,name:"Chicken 65",category:"Starters",price:160,emoji:"🍢",desc:"Crispy, spicy chicken bites.",badge:""},
-  {id:9,name:"Water Bottle",category:"Drinks",price:20,emoji:"💧",desc:"Chilled drinking water.",badge:""}
+  const MENU = [
+  {
+    id: 1,
+    name: "Alfaham Mandhi Full",
+    category: "Mandhi",
+    price: 1100,
+    emoji: "🍗",
+    desc: "Full Alfaham Mandhi. Peri pepper flavour available."
+  },
+  {
+    id: 2,
+    name: "Alfaham Mandhi Half",
+    category: "Mandhi",
+    price: 600,
+    emoji: "🍗",
+    desc: "Half Alfaham Mandhi. Peri pepper flavour available."
+  },
+  {
+    id: 3,
+    name: "Alfaham Mandhi Quarter",
+    category: "Mandhi",
+    price: 300,
+    emoji: "🍗",
+    desc: "Quarter Alfaham Mandhi. Peri pepper flavour available."
+  },
+  {
+    id: 4,
+    name: "Alfaham Full",
+    category: "Grill",
+    price: 650,
+    emoji: "🔥",
+    desc: "Full grilled Alfaham chicken."
+  },
+  {
+    id: 5,
+    name: "Alfaham Half",
+    category: "Grill",
+    price: 325,
+    emoji: "🔥",
+    desc: "Half grilled Alfaham chicken."
+  },
+  {
+    id: 6,
+    name: "Alfaham Quarter",
+    category: "Grill",
+    price: 200,
+    emoji: "🔥",
+    desc: "Quarter grilled Alfaham chicken."
+  },
+  {
+    id: 7,
+    name: "Grill Mandhi Full",
+    category: "Mandhi",
+    price: 1100,
+    emoji: "🍛",
+    desc: "Full Grill Mandhi."
+  },
+  {
+    id: 8,
+    name: "Grill Mandhi Half",
+    category: "Mandhi",
+    price: 600,
+    emoji: "🍛",
+    desc: "Half Grill Mandhi."
+  },
+  {
+    id: 9,
+    name: "Grill Mandhi Quarter",
+    category: "Mandhi",
+    price: 300,
+    emoji: "🍛",
+    desc: "Quarter Grill Mandhi."
+  },
+  {
+    id: 10,
+    name: "Grill Full",
+    category: "Grill",
+    price: 650,
+    emoji: "🔥",
+    desc: "Full grilled chicken."
+  },
+  {
+    id: 11,
+    name: "Grill Half",
+    category: "Grill",
+    price: 325,
+    emoji: "🔥",
+    desc: "Half grilled chicken."
+  },
+  {
+    id: 12,
+    name: "Grill Quarter",
+    category: "Grill",
+    price: 200,
+    emoji: "🔥",
+    desc: "Quarter grilled chicken."
+  },
+  {
+    id: 13,
+    name: "Chicken Biryani",
+    category: "Biryani",
+    price: 230,
+    emoji: "🍚",
+    desc: "Chicken biryani with aromatic rice."
+  },
+  {
+    id: 14,
+    name: "Chicken Masala",
+    category: "Curries",
+    price: 230,
+    emoji: "🍛",
+    desc: "Chicken masala."
+  },
+  {
+    id: 15,
+    name: "Porotta",
+    category: "Sides",
+    price: 25,
+    emoji: "🫓",
+    desc: "Soft, flaky porotta."
+  }
+];}
 ];
 
 const cart = {};
