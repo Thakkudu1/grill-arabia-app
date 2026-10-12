@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17120f">
+  <meta name="description" content="Order delicious food from Grill Arabia.">
+  <title>Grill Arabia | Food Ordering</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">GA</span><span><strong>GRILL ARABIA</strong><small>Fresh • Hot • Delicious</small></span></a>
+    <button class="cart-button" id="open-cart" aria-label="Open cart">🛒 <span>Cart</span> <b id="cart-count">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">WELCOME TO GRILL ARABIA</span>
+        <h1>Big flavour.<br><em>Easy ordering.</em></h1>
+        <p>Your favourites, freshly prepared and delivered to your door.</p>
+        <a class="primary-button" href="#menu">Explore menu <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Food illustration" role="img">
+        <div class="plate"><div class="rice">🍚</div><div class="chicken">🍗</div><div class="greens">🥗</div></div>
+        <span class="floating-tag">MADE FRESH<br><b>FOR YOU</b></span>
+      </div>
+    </section>
+
+    <section class="order-note">
+      <span>🔥</span><div><strong>Craving something tasty?</strong><small>Add items to your cart and send your order directly to our restaurant on WhatsApp.</small></div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading"><div><span class="eyebrow">OUR MENU</span><h2>Choose your favourites</h2></div><span class="menu-hint">Tap + to add</span></div>
+      <div class="category-row" id="categories"></div>
+      <div class="menu-grid" id="menu-grid"></div>
+    </section>
+
+    <section class="delivery-banner">
+      <div><span class="eyebrow">GOOD FOOD, GOOD MOOD</span><h2>Freshly made.<br>Ready when you are.</h2><p>Delivery availability and charges are confirmed by the restaurant.</p></div>
+      <div class="delivery-icon">🛵</div>
+    </section>
+  </main>
+
+  <footer><div class="brand footer-brand"><span class="brand-mark">GA</span><span><strong>GRILL ARABIA</strong><small>Made with flavour.</small></span></div><p>© <span id="year"></span> Grill Arabia. All rights reserved.</p><p class="setup-note">Restaurant details can be edited in <code>app.js</code>.</p></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head"><div><span class="eyebrow">YOUR ORDER</span><h2>Your cart</h2></div><button class="icon-button" id="close-cart" aria-label="Close cart">✕</button></div>
+    <div id="cart-items" class="cart-items"><p class="empty-cart">Your cart is empty. Add something delicious!</p></div>
+    <div class="cart-bottom">
+      <label class="field-label" for="customer-name">Your name</label><input id="customer-name" placeholder="Enter your name">
+      <label class="field-label" for="customer-address">Delivery address</label><textarea id="customer-address" rows="2" placeholder="House, street, area"></textarea>
+      <label class="field-label" for="customer-notes">Order notes (optional)</label><textarea id="customer-notes" rows="2" placeholder="Spice level, instructions..."></textarea>
+      <div class="total-row"><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+      <button class="primary-button checkout-button" id="checkout">Order on WhatsApp <span>↗</span></button>
+      <small class="checkout-help">No online payment is collected by this demo app.</small>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
