@@ -28,3 +28,7 @@ Add an object like this to the `MENU` list in `app.js`:
 {id:10,name:"Your Dish",category:"Mandi",price:250,emoji:"🍛",desc:"Short description of the dish.",badge:"POPULAR"}
 ```
 Use a unique numeric `id` for each item.
+
+
+## Logo
+The website uses `grill-arabia-logo.png` in the header and footer, and as the browser tab icon. Keep this image in the repository root with `index.html`, `style.css`, and `app.js`.
