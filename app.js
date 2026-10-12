@@ -128,10 +128,10 @@ const MENU = [
     emoji: "🫓",
     desc: "Soft, flaky porotta."
   }
-];}
-];
+  ];
 
 const cart = {};
+let activeCategory = "All";
 let activeCategory = "All";
 const money = n => "₹" + Number(n).toLocaleString("en-IN");
 const grid = document.getElementById("menu-grid");
