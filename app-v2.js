@@ -132,6 +132,13 @@ const RESTAURANT_WHATSAPP = "917736094215"; // Grill Arabia WhatsApp number
 const cart = {};
 let activeCategory = "All";
 const money = n => "₹" + Number(n).toLocaleString("en-IN");
+const FOOD_IMAGES = {
+  Mandhi: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85",
+  Grill: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=85",
+  Biryani: "https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=900&q=85",
+  Curries: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=85",
+  Sides: "https://images.unsplash.com/photo-1598219878829-8afdinn7c7b0?auto=format&fit=crop&w=900&q=85"
+};
 const grid = document.getElementById("menu-grid");
 const categoriesEl = document.getElementById("categories");
 const cartPanel = document.getElementById("cart-panel");
@@ -148,7 +155,7 @@ function renderCategories(){
 function renderMenu(){
   const items = MENU.filter(item => activeCategory==="All" || item.category===activeCategory);
   grid.innerHTML = items.map(item => `<article class="food-card">
-    <div class="food-art"><span>${item.emoji}</span>${item.badge?`<span class="badge">${item.badge}</span>`:""}</div>
+    <div class="food-art"><img src="${FOOD_IMAGES[item.category] || FOOD_IMAGES.Grill}" alt="${item.name}" loading="lazy" onerror="this.remove()"><span class="food-fallback" style="display:none">${item.emoji}</span>${item.badge?`<span class="badge">${item.badge}</span>`:""}</div>
     <div class="food-info"><h3>${item.name}</h3><p>${item.desc}</p>
     <div class="food-bottom"><span class="price">${money(item.price)}</span><button class="add-button" data-add="${item.id}" aria-label="Add ${item.name} to cart">+</button></div></div>
     </article>`).join("");
