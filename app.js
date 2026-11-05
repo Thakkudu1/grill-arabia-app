@@ -11,7 +11,7 @@ const RESTAURANT_WHATSAPP = "917736094215"; // Grill Arabia WhatsApp number
     id: 1,
     name: "Alfaham Mandhi Full",
     category: "Mandhi",
-    price: 1100,
+    price: 1200,
     emoji: "🍗",
     desc: "Full Alfaham Mandhi. Peri pepper flavour available."
   },
@@ -19,7 +19,7 @@ const RESTAURANT_WHATSAPP = "917736094215"; // Grill Arabia WhatsApp number
     id: 2,
     name: "Alfaham Mandhi Half",
     category: "Mandhi",
-    price: 600,
+    price: 700,
     emoji: "🍗",
     desc: "Half Alfaham Mandhi. Peri pepper flavour available."
   },
@@ -59,7 +59,7 @@ const RESTAURANT_WHATSAPP = "917736094215"; // Grill Arabia WhatsApp number
     id: 7,
     name: "Grill Mandhi Full",
     category: "Mandhi",
-    price: 1100,
+    price: 1200,
     emoji: "🍛",
     desc: "Full Grill Mandhi."
   },
@@ -67,7 +67,7 @@ const RESTAURANT_WHATSAPP = "917736094215"; // Grill Arabia WhatsApp number
     id: 8,
     name: "Grill Mandhi Half",
     category: "Mandhi",
-    price: 600,
+    price: 700,
     emoji: "🍛",
     desc: "Half Grill Mandhi."
   },
