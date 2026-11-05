@@ -49,19 +49,20 @@
     </section>
   </main>
 
-  <footer><div class="brand footer-brand"><img class="footer-logo" src="grill-arabia-logo.png" alt="Grill Arabia — The Real Taste"></div><p>© <span id="year"></span> Grill Arabia. All rights reserved.</p><p class="setup-note">Restaurant details can be edited in <code>app.js</code>.</p></footer>
+  <footer><div class="brand footer-brand"><img class="footer-logo" src="grill-arabia-logo.png" alt="Grill Arabia — The Real Taste"></div><p>© <span id="year"></span> Grill Arabia. All rights reserved.</p><p class="setup-note">Order directly with Grill Arabia on WhatsApp.</p></footer>
 
   <div class="overlay" id="overlay"></div>
   <aside class="cart-panel" id="cart-panel" aria-label="Shopping cart" aria-hidden="true">
-    <div class="cart-head"><div><span class="eyebrow">YOUR ORDER</span><h2>Your cart</h2></div><button class="icon-button" id="close-cart" aria-label="Close cart">✕</button></div>
+    <div class="cart-head"><div><span class="eyebrow">GRILL ARABIA • SECURE ORDER</span><h2>Review your order</h2><small class="checkout-subtitle">Freshly prepared. Confirmed directly on WhatsApp.</small></div><button class="icon-button" id="close-cart" aria-label="Close cart">✕</button></div>
     <div id="cart-items" class="cart-items"><p class="empty-cart">Your cart is empty. Add something delicious!</p></div>
     <div class="cart-bottom">
+      <div class="checkout-section-title"><span>01</span><div><strong>Delivery details</strong><small>Tell us where to deliver your food</small></div></div>
       <label class="field-label" for="customer-name">Your name</label><input id="customer-name" placeholder="Enter your name">
       <label class="field-label" for="customer-address">Delivery address</label><textarea id="customer-address" rows="2" placeholder="House, street, area"></textarea>
       <label class="field-label" for="customer-notes">Order notes (optional)</label><textarea id="customer-notes" rows="2" placeholder="Spice level, instructions..."></textarea>
-      <div class="total-row"><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
-      <button class="primary-button checkout-button" id="checkout">Order on WhatsApp <span>↗</span></button>
-      <small class="checkout-help">No online payment is collected by this demo app.</small>
+      <div class="checkout-summary"><div class="checkout-section-title"><span>02</span><div><strong>Order total</strong><small>Delivery charge confirmed by restaurant</small></div></div><div class="total-row"><span>Item subtotal</span><strong id="subtotal">₹0</strong></div></div>
+      <button class="primary-button checkout-button" id="checkout"><span class="wa-mark">◉</span> Confirm order on WhatsApp <span>↗</span></button>
+      <small class="checkout-help">Your order details will open in WhatsApp for confirmation.</small>
     </div>
   </aside>
   <div class="toast" id="toast" role="status"></div>
