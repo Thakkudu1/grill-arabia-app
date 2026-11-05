@@ -133,11 +133,11 @@ const cart = {};
 let activeCategory = "All";
 const money = n => "₹" + Number(n).toLocaleString("en-IN");
 const FOOD_IMAGES = {
-  Mandhi: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85",
-  Grill: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=85",
-  Biryani: "https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=900&q=85",
-  Curries: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=85",
-  Sides: "https://images.unsplash.com/photo-1598219878829-8afdinn7c7b0?auto=format&fit=crop&w=900&q=85"
+  Mandhi: "https://images.unsplash.com/photo-1708184528306-f75a0a5118ee?auto=format&fit=crop&w=900&q=85",
+  Grill: "https://images.unsplash.com/photo-1567121938596-6d9d015d348b?auto=format&fit=crop&w=900&q=85",
+  Biryani: "https://images.unsplash.com/photo-1559528896-c5310744cce8?auto=format&fit=crop&w=900&q=85",
+  Curries: "https://images.unsplash.com/photo-1772730065344-4cf131b39951?auto=format&fit=crop&w=900&q=85",
+  Sides: "https://images.unsplash.com/photo-1789991895360-ad65a685485a?auto=format&fit=crop&w=900&q=85"
 };
 const grid = document.getElementById("menu-grid");
 const categoriesEl = document.getElementById("categories");
