@@ -19,7 +19,7 @@ const RESTAURANT_WHATSAPP = "917736094215"; // Grill Arabia WhatsApp number
     id: 2,
     name: "Alfaham Mandhi Half",
     category: "Mandhi",
-    price: 650,
+    price: 700,
     emoji: "🍗",
     desc: "Half Alfaham Mandhi. Peri pepper flavour available."
   },
