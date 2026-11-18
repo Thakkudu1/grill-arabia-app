@@ -35,17 +35,17 @@ const sections=[
 {title:"Fresh Lime & Juices",items:[["Fresh Lime","₹50"],["Mint Lime","₹60"],["Ginger Lime","₹60"],["Pineapple Juice","₹80"],["Orange Juice","₹80"],["Watermelon Juice","₹80"],["Apple Juice","₹110"],["Mosambi Juice","₹80"],["Papaya Juice","₹80"]]},
 {title:"Breads & Sides",items:[["Porotta","₹25"],["Bread Omelette","₹95"],["Omelette","₹25"],["Romali Rotti","₹30"],["Chicken Masala","₹230"]]}
 ];let active='All';const grid=document.getElementById('grid'),chips=document.getElementById('chips'),search=document.getElementById('search'),cats=['All',...sections.map(x=>x.title)];function draw(){chips.innerHTML=cats.map(c=>'<button class="chip '+(active===c?'active':'')+'" data-c="'+c+'">'+c+'</button>').join('');chips.querySelectorAll('button').forEach(b=>b.onclick=()=>{active=b.dataset.c;draw()});let q=search.value.toLowerCase(),list=sections.filter(s=>(active==='All'||s.title===active)&&s.items.some(i=>i.join(' ').toLowerCase().includes(q)));const photos={
-'Biryani':'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_600/RX_THUMBNAIL/IMAGES/VENDOR/2026/2/9/ba45a744-ebcc-41e5-ac7c-5fb484a62fee_1002315.jpg',
-'Mandi':'https://b.zmtcdn.com/data/pictures/chains/7/19866067/da8ebe0e5651ea966df210a24c313235.jpg',
+'Biryani':'https://b.zmtcdn.com/data/pictures/4/19855414/6cdd0e5b9f3aea4ece6dba04779529ff.jpg',
+'Mandi':'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2026/1/31/1a3889f0-a501-4a32-b686-0b07b65e92dd_db54d83a-3b3d-4e1c-babc-05b72cf2f226.jpg',
 'Grill Items':'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=900&q=85',
 'Shawarma':'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85',
-'Alfaham · BBQ':'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_600%2Ch_600%2Cc_fit/FOOD_CATALOG/IMAGES/CMS/2024/9/11/6545780d-6092-462f-9fe8-751cabe9db23_31478fed-824d-4da0-9c0d-925899c634f0.jpg',
+'Alfaham · BBQ':'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2025/6/16/56e9e077-4df0-4172-97c9-50c86e02533d_e4f54cf7-7b1e-488b-8697-f1afdec0f7a1.jpg',
 'Chinese Items':'https://tb-static.uber.com/prod/image-proc/processed_images/05724d1b810eb2730b8e511f1b714d4b/9e31c708e4cf73b6e3ea1bd4a9b6e16b.jpeg',
 'Burgers':'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85',
 'Sandwich & Omelette':'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85',
 'Shakes':'https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=900&q=85',
 'Tea & Hot Drinks':'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=900&q=85',
-'Fresh Lime & Juices':'https://images.squarespace-cdn.com/content/v1/660eb02da4eda3723b5a62a5/5ac76054-f49b-4440-b84a-262b2ad40ed5/Fresh%2BJuices.png?format=1500w',
+'Fresh Lime & Juices':'https://cdn.phuket.net/bucket/directory/size/600/400/2021/10/202110210655_5L5q_008.jpeg',
 'Breads & Sides':'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85'
 };grid.innerHTML=list.length?list.map(s=>'<article class="card"><img class="category-photo" src="'+(photos[s.title]||photos['Grill Items'])+'" alt="'+s.title+' menu photo" loading="lazy" onerror="this.style.display=\'none\'"><h3>'+s.title+'</h3>'+s.items.filter(i=>i.join(' ').toLowerCase().includes(q)).map(i=>'<div class="item"><span>'+i[0]+'</span><span class="price">'+i[1]+'</span></div>').join('')+'</article>').join(''):'<div class="empty">No menu items found. Try another search.</div>'}search.addEventListener('input',draw);document.getElementById('year').textContent=new Date().getFullYear();draw();
 </script></body></html>
